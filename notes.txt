@@ -1,0 +1,41 @@
+Timing Information:
+-------------------
+
+Results for the extraLargeArray
+unshift 570.4612 ms
+push 3.1273 ms
+
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push(): 3.1273 ms
+Time to run code with unshift(): 570.4612 ms
+
+Large Array
+-----------
+Time to run code with push(): 433.1 μs
+Time to run code with unshift(): 5.0815 ms
+
+Medium Array
+------------
+Time to run code with push(): 92.3 μs
+Time to run code with unshift(): 105.4 μs
+
+Small Array
+-----------
+Time to run code with push(): 67.9 μs
+Time to run code with unshift(): 26.4 μs
+
+Tiny Array
+----------
+Time to run code with push(): 59.6 μs
+Time to run code with unshift(): 19.4 μs
+
+
+EXPLANATION:
+
+The key insight is that unshift has to shift elements, 
+making it slower as the array size increases. 
+Push directly adds elements to the end, and its 
+time complexity remains constant.
